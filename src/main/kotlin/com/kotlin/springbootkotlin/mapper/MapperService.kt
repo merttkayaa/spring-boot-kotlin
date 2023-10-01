@@ -6,7 +6,7 @@ import com.kotlin.springbootkotlin.model.request.CreateEmployee
 
 interface MapperService {
 
-//    fun createToEntity(createEmployee: CreateEmployee) : Employee
+    fun createToEntity(createEmployee: CreateEmployee) : Employee
 
     fun entityToDto(employee: Employee) : EmployeeDto
 }

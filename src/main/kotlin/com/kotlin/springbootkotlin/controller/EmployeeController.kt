@@ -13,16 +13,8 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("/crud")
 class EmployeeController(private var employeeService : EmployeeService) {
-
-
-
-//    @PostMapping
-//    fun create(@RequestBody createEmployee : CreateEmployee) : EmployeeDto {
-//        return employeeService.create(createEmployee)
-//    }
-
     @PostMapping
-    fun create(@RequestBody employee : Employee) : Employee {
-        return employeeService.create(employee)
+    fun create(@RequestBody createEmployee : CreateEmployee) : EmployeeDto {
+        return employeeService.create(createEmployee)
     }
 }

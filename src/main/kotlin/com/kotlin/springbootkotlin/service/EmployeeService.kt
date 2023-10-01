@@ -5,7 +5,5 @@ import com.kotlin.springbootkotlin.model.EmployeeDto
 import com.kotlin.springbootkotlin.model.request.CreateEmployee
 
 interface EmployeeService {
-//    fun create(createEmployee : CreateEmployee) : EmployeeDto
-
-    fun create(employee: Employee) : Employee
+    fun create(createEmployee : CreateEmployee) : EmployeeDto
 }

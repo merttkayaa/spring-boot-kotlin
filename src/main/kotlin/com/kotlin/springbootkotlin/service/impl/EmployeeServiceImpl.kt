@@ -9,10 +9,7 @@ import org.springframework.stereotype.Service
 
 @Service
 class EmployeeServiceImpl(private val employeeDbService : EmployeeDbService):EmployeeService {
-    //    override fun create(createEmployee: CreateEmployee): EmployeeDto {
-//        return employeeDbService.create(createEmployee);
-//    }
-    override fun create(employee: Employee): Employee {
-        return employeeDbService.create(employee)
+    override fun create(createEmployee: CreateEmployee): EmployeeDto {
+        return employeeDbService.create(createEmployee);
     }
 }
