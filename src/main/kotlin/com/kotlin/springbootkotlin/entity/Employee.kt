@@ -7,7 +7,7 @@ import jakarta.persistence.*
 data class Employee(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id : Long? = null,
+    val id : Long?,
     val fullName : String,
     val age : Int
 )
